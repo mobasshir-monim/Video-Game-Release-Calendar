@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Game Release Calendar</title>
+</head>
+<body>
+    <h1>Video Game Calendar</h1>
+    <div class="controls">
+        <button id="prevMonth">Previous</button>
+        <span id="currentMonthYear"></span>
+        <button id="nextMonth">Next</button>
+    </div>
+    <div id="calendar"></div>
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <span class="close">&times</span>
+            <img src="" id="gameImage">
+            <h2 id='gameTitle'></h2>
+            <p><strong>Description: </strong> <span id="gameDescription"></span> </p>
+            <p><strong>Release Date: </strong> <span id="gameReleaseDate"></span></p>
+            <p><strong>Rating: </strong> <span id="gameRating"></span><i class="fa-solid fa-star" style="color: #96c11f;"></i></p>
+            <p><strong>Platforms: </strong> <span id="gamePlatforms"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
